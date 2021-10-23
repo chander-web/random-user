@@ -1,0 +1,97 @@
+@import "../../assets/scss/mixins";
+
+.userBox {
+    width:700px;
+     margin: auto;
+     height:400px;}
+
+     .user_box_offset {
+        margin-top: -200px;
+     }
+
+     .user_inner_box {
+         padding: 20px 0;
+         text-align: center;
+         position: relative;
+         box-shadow: 0 5px 15px rgb(0 0 0 / 20%);
+    
+         background-color: #fff;
+         &:after {
+            content: "";
+            display: block;
+            width: 100%;
+            position: absolute;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+            background-color: #f9f9f9;
+            top: 0px;
+            height: 130px;
+        }
+        
+        .user_inner_aligement {
+            display: flex;
+            justify-content: center;
+        }
+     }
+
+     .user_profile_box {
+        width: 150px; 
+        height: 150px;
+         padding: 5px; 
+         z-index: 1;
+         @include border-radius(50%);
+         border: 1px solid rgba(0,0,0,.25);
+
+         img { width: 100%; @include border-radius(50%);}
+        
+        } 
+
+        .userDetail_box {
+            padding-top:10px;
+           p {
+            color: #999;
+            font-size: 18px;
+            margin-bottom: 10px;
+           }
+           h2 {
+            color: #2c2e31;
+            font-size: 38px;
+            margin:0px;
+           }
+        }
+
+        .userList {list-style-type: none;
+        li  {  display: inline-block;  
+               margin-right: 20px;
+            }
+        button {
+            font-size: 30px;
+            background: transparent;
+            border: 0px;
+            cursor: pointer;
+
+            &:hover {
+                color:#83ba43
+            }
+        }
+        }
+        
+
+        .random_user {
+    background: #83ba43;
+    border: 0px;
+    padding: 6px 10px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+ 
+    &:hover {
+        background-color: #79ad3c;
+    }
+        }
+
+        .btn_alignment {
+            margin-top: 16px;
+            margin-bottom: 20px;
+        }

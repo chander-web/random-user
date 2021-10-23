@@ -1,0 +1,19 @@
+@import"./assets/scss/fonts";
+@import"./assets/scss/mixins";
+
+body {
+  margin: 0;
+  font-family:  'Ubuntu-Medium', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f9f9f9;
+}
+
+
+header {
+  height: 50vh;
+  width: 100%;;
+  background: #2c2e31;
+}
