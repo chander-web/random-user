@@ -1,0 +1,23 @@
+$layout-breakpoint-medium: 768px;
+$layout-breakpoint-extra-small: 480px;
+
+@media (max-width: $layout-breakpoint-medium) {
+  .userBox {width: 97%}
+  .userList {padding-left: 0}
+  .userDetail_box h2 {
+      font-size: 30px;
+  }
+}
+
+@media (max-width: $layout-breakpoint-extra-small) {
+    .userDetail_box {
+        p { font-size: 15px;}
+    }
+    h2 {
+        font-size: 24px;
+    }
+    .userList {
+        li {margin-right: 10px;}
+        button {font-size: 19px;}
+    }
+  }
